@@ -10,7 +10,7 @@
 #include <QColor>
 #include <QtQml/qqml.h>
 
-class SvgItem : public QQuickPaintedItem {
+class LXSvgItem : public QQuickPaintedItem {
     Q_OBJECT
     Q_PROPERTY(QString source READ source WRITE setSource NOTIFY sourceChanged)
     Q_PROPERTY(QString elementId READ elementId WRITE setElementId NOTIFY elementIdChanged)

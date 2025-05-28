@@ -7,10 +7,10 @@
 #include <QImage>
 #include <QPainter>
 
-class SvgProvider : public QQuickImageProvider
+class LXSvgProvider : public QQuickImageProvider
 {
 public:
-    SvgProvider();
+    LXSvgProvider();
 
     QImage requestImage(const QString &id, QSize *size, const QSize &requestedSize) override;
 };
