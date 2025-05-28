@@ -11,7 +11,7 @@ Window {
 
         height: 128
         smooth: true
-        source: "image:/logo.svg"
+        "image:/logo.svg"
         width: 128
     }
 }
