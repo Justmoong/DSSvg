@@ -4,7 +4,7 @@
 #include "LXSvgProvider.h"
 
 LXSvgProvider::LXSvgProvider()
-    : QQuickProvider(QQuickProvider::Image)
+    : QQuickImageProvider(QQuickImageProvider::Image)
 {
 }
 

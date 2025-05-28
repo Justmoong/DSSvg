@@ -16,6 +16,6 @@ qt_add_qml_module(LXSvg
         VERSION 1.0
         SOURCES
         LXSvgItem.cpp
-        SvgItem.h
+        LXSvgItem.h
         LXSvgPlugin.cpp
 )

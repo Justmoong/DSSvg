@@ -11,8 +11,7 @@ class LXSvgPlugin : public QQmlExtensionPlugin {
 
 public:
     void registerTypes(const char *uri) override {
-        // URI 일치 여부는 CMake의 qt_add_qml_module() URI와 반드시 같아야 함
-        Q_ASSERT(uri == QStringLiteral("SvgProvider"));
+        Q_ASSERT(uri == QStringLiteral("LXSvg"));
         qmlRegisterType<LXSvgItem>(uri, 1, 0, "LXSvgItem");
     }
 };
