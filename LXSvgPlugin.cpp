@@ -1,9 +1,7 @@
 //
 // Created by Justmoong on 5/28/25.
 //
-#include <QQmlEngine>
-#include <QQmlExtensionPlugin>
-#include "LXSvgItem.h"
+#include "LXSvgPlugin.h"
 
 class LXSvgPlugin : public QQmlExtensionPlugin {
     Q_OBJECT
