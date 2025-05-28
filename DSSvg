@@ -1,0 +1,4 @@
+#pragma once
+#include "DSSvgProvider.h"
+#include "DSSvgImporter.h"
+#include "DSSvgItem.h"

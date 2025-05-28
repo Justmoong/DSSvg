@@ -1,14 +1,14 @@
 //
 // Created by Justmoong on 5/28/25.
 //
-#include "LXSvgProvider.h"
+#include "DSSvgProvider.h"
 
-LXSvgProvider::LXSvgProvider()
+DSSvgProvider::DSSvgProvider()
     : QQuickImageProvider(QQuickImageProvider::Image)
 {
 }
 
-QImage LXSvgProvider::requestImage(const QString &id, QSize *size, const QSize &requestedSize)
+QImage DSSvgProvider::requestImage(const QString &id, QSize *size, const QSize &requestedSize)
 {
     QString path = id;
     if (path.startsWith("qrc:/"))

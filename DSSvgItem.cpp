@@ -1,17 +1,17 @@
 //
 // Created by Justmoong on 5/28/25.
 //
-#include "LXSvgItem.h"
+#include "DSSvgItem.h"
 #include <QPainter>
 
-LXSvgItem::LXSvgItem(QQuickItem *parent)
+DSSvgItem::DSSvgItem(QQuickItem *parent)
     : QQuickPaintedItem(parent) {}
 
-QString LXSvgItem::source() const {
+QString DSSvgItem::source() const {
     return m_source;
 }
 
-void LXSvgItem::setSource(const QString &source) {
+void DSSvgItem::setSource(const QString &source) {
     if (m_source == source)
         return;
     m_source = source;
@@ -20,11 +20,11 @@ void LXSvgItem::setSource(const QString &source) {
     update();
 }
 
-QString LXSvgItem::elementId() const {
+QString DSSvgItem::elementId() const {
     return m_elementId;
 }
 
-void LXSvgItem::setElementId(const QString &elementId) {
+void DSSvgItem::setElementId(const QString &elementId) {
     if (m_elementId == elementId)
         return;
     m_elementId = elementId;
@@ -32,11 +32,11 @@ void LXSvgItem::setElementId(const QString &elementId) {
     update();
 }
 
-QColor LXSvgItem::colorOverride() const {
+QColor DSSvgItem::colorOverride() const {
     return m_colorOverride;
 }
 
-void LXSvgItem::setColorOverride(const QColor &color) {
+void DSSvgItem::setColorOverride(const QColor &color) {
     if (m_colorOverride == color)
         return;
     m_colorOverride = color;
@@ -44,11 +44,11 @@ void LXSvgItem::setColorOverride(const QColor &color) {
     update(); // 향후 구현에 따라 필요
 }
 
-void LXSvgItem::loadSvg() {
+void DSSvgItem::loadSvg() {
     m_renderer.load(m_source);
 }
 
-void LXSvgItem::paint(QPainter *painter) {
+void DSSvgItem::paint(QPainter *painter) {
     if (!m_renderer.isValid())
         return;
 

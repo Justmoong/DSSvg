@@ -6,6 +6,6 @@
 #pragma once
 #include <QQmlEngine>
 
-namespace LXSvgImporter {
+namespace DSSvgImporter {
     void registerProvider(QQmlEngine *engine, const QString &prefix = "svg");
 }

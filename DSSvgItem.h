@@ -8,14 +8,14 @@
 #include <QString>
 #include <QColor>
 
-class LXSvgItem : public QQuickPaintedItem {
+class DSSvgItem : public QQuickPaintedItem {
     Q_OBJECT
     Q_PROPERTY(QString source READ source WRITE setSource NOTIFY sourceChanged)
     Q_PROPERTY(QString elementId READ elementId WRITE setElementId NOTIFY elementIdChanged)
     Q_PROPERTY(QColor colorOverride READ colorOverride WRITE setColorOverride NOTIFY colorOverrideChanged)
 
 public:
-    explicit LXSvgItem(QQuickItem *parent = nullptr);
+    explicit DSSvgItem(QQuickItem *parent = nullptr);
 
     QString source() const;
     void setSource(const QString &source);

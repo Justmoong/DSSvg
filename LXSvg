@@ -1,4 +1,0 @@
-#pragma once
-#include "LXSvgProvider.h"
-#include "LXSvgImporter.h"
-#include "LXSvgItem.h"
